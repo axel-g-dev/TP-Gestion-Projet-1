@@ -75,6 +75,7 @@ gitGraph
    commit id: "Remove authors section"
    commit id: "Full technical documentation"
 
+```
 
 ## Objectifs
 
