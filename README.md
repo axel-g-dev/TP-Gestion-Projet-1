@@ -35,47 +35,58 @@
 
 
 ```mermaid
-
 gitGraph
-   commit id: "Initial commit"
-   commit id: "Update project title"
-   commit id: "Update README"
-   commit id: "Remove project title"
-   commit id: "Add gratitude message"
-   commit id: "Remove thank you note"
-   commit id: "Update README"
-   commit id: "Fix README formatting"
+  commit id:"Initial commit"
+  commit id:"Update project title in README"
+  commit id:"Update README.md"
+  commit id:"Remove project title from README"
+  commit id:"Add gratitude message to README"
+  commit id:"Remove thank you note from README"
 
-   branch feature/interface-contacts
-   checkout feature/interface-contacts
-   commit id: "CLI + contacts module"
-   commit id: "Add .gitignore"
+  branch teddy
+  checkout teddy
+  commit id:"Add functions to manage contacts in JSON file"
+  commit id:"Add files via upload"
 
-   checkout main
-   branch teddy
-   checkout teddy
-   commit id: "Contacts JSON functions"
-   commit id: "Add files via upload"
+  checkout main
+  commit id:"Update README.md"
+  commit id:"Fix formatting in README for milestone instructions"
 
-   checkout main
-   branch vcard-design
-   checkout vcard-design
-   commit id: "QR Code vCard"
-   commit id: "Improve vCard design"
-   commit id: "Install & usage guide"
+  branch feature/interface-contacts
+  checkout feature/interface-contacts
+  commit id:"Ajout du script principal et du module de contacts avec une interface CLI"
+  commit id:"Ajout du .gitignore"
+  commit id:"Ajout de la génération de QR Code vCard"
 
-   checkout main
-   merge vcard-design id: "Merge PR #12"
-   merge teddy id: "Merge PR #11"
+  branch vcard-design
+  checkout vcard-design
+  commit id:"Amélioration du design de la carte de visite vCard"
 
-   commit id: "Cleanup & consolidation"
-   commit id: "Modular refactor"
-   commit id: "Update README (architecture)"
-   commit id: "Remove emojis"
-   commit id: "Remove authors section"
-   commit id: "Full technical documentation"
+  checkout main
+  merge teddy id:"Merge PR #11"
+  merge vcard-design id:"Merge PR #12" tag:"V0.1.1"
 
+  commit id:"Consolidation et nettoyage du projet"
+  commit id:"Séparation du code en modules distincts"
+  commit id:"Mise à jour du README avec architecture modulaire"
+  commit id:"Suppression de tous les émojis du code"
+  commit id:"Suppression de la section auteurs du README"
+  commit id:"Ajout de la documentation technique complète"
+  commit id:"Modification de la DOCUMENTATION.md" tag:"V0.1.2"
+  commit id:"Ajout d'une table des matières au README"
+
+  branch teddy-badges
+  checkout teddy-badges
+  commit id:"Add badges to README for project visibility"
+
+  checkout main
+  merge teddy-badges id:"Merge PR #17"
+
+  commit id:"Add mermaid diagram for commit history visualization"
+  commit id:"Add project objectives section to README"
 ```
+
+
 
 ## Objectifs
 
