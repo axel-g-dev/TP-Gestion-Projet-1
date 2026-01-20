@@ -34,6 +34,48 @@
 ---
 
 
+```mermaid
+
+gitGraph
+   commit id: "Initial commit"
+   commit id: "Update project title"
+   commit id: "Update README"
+   commit id: "Remove project title"
+   commit id: "Add gratitude message"
+   commit id: "Remove thank you note"
+   commit id: "Update README"
+   commit id: "Fix README formatting"
+
+   branch feature/interface-contacts
+   checkout feature/interface-contacts
+   commit id: "CLI + contacts module"
+   commit id: "Add .gitignore"
+
+   checkout main
+   branch teddy
+   checkout teddy
+   commit id: "Contacts JSON functions"
+   commit id: "Add files via upload"
+
+   checkout main
+   branch vcard-design
+   checkout vcard-design
+   commit id: "QR Code vCard"
+   commit id: "Improve vCard design"
+   commit id: "Install & usage guide"
+
+   checkout main
+   merge vcard-design id: "Merge PR #12"
+   merge teddy id: "Merge PR #11"
+
+   commit id: "Cleanup & consolidation"
+   commit id: "Modular refactor"
+   commit id: "Update README (architecture)"
+   commit id: "Remove emojis"
+   commit id: "Remove authors section"
+   commit id: "Full technical documentation"
+
+
 ## Objectifs
 
 * Structurer un **projet informatique collaboratif**
