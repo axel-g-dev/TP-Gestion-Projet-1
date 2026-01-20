@@ -2,6 +2,33 @@
 
 **Développement Python avec GitHub Projects (Kanban & Roadmap)**
 
+## Table des matières
+
+- [Objectifs](#objectifs)
+- [Pré-requis](#pré-requis)
+- [Outils utilisés](#outils-utilisés)
+- [Mini-projet support](#mini-projet-support)
+- [Répartition des rôles](#répartition-des-rôles)
+- [Étape 1 – Création du repository et du projet](#étape-1--création-du-repository-et-du-projet)
+- [Étape 2 – Création des issues](#étape-2--création-des-issues)
+- [Étape 3 – Organisation du Kanban](#étape-3--organisation-du-kanban)
+- [Étape 4 – Gestion des milestones (Sprints)](#étape-4--gestion-des-milestones-sprints)
+- [Étape 5 – Roadmap (Diagramme de Gantt)](#étape-5--roadmap-diagramme-de-gantt)
+- [Étape 6 – Développement Python](#étape-6--développement-python)
+- [Étape 7 – Suivi et reporting](#étape-7--suivi-et-reporting)
+- [Étape 8 – Analyse et synthèse](#étape-8--analyse-et-synthèse)
+- [Remarques](#remarques)
+- [Guide d'Utilisation](#guide-dutilisation)
+  - [Installation](#installation)
+  - [Lancement](#lancement)
+  - [Fonctionnalités Implémentées](#fonctionnalités-implémentées)
+- [Structure du Projet](#structure-du-projet)
+- [Architecture Modulaire](#architecture-modulaire)
+- [Technologies Utilisées](#technologies-utilisées)
+
+---
+
+
 ## Objectifs
 
 * Structurer un **projet informatique collaboratif**
