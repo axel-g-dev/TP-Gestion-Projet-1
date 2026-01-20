@@ -133,7 +133,7 @@ To do → In progress → Done
 
 ## Étape 4 – Gestion des milestones (Sprints)
 
-Dans l'onglet 'Pull requests', ajouter 'Milestone' : 
+Dans l'onglet `Pull requests`, ajouter `Milestone` : 
 
 1. Créer deux milestones :
 
