@@ -22,4 +22,4 @@ def ajouter_contact_interface():
     }
     
     contacts.ajouter_contact(contact)
-    print("✅ Contact ajouté avec succès !")
+    print("Contact ajouté avec succès !")

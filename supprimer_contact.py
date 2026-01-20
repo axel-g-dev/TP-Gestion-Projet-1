@@ -14,11 +14,11 @@ def supprimer_contact_interface():
         with open("contacts.json", "r") as f:
             liste_contacts = json.load(f)
     except FileNotFoundError:
-        print("❌ Aucun contact trouvé.")
+        print("Aucun contact trouvé.")
         return
 
     if not liste_contacts:
-        print("❌ La liste est vide.")
+        print("La liste est vide.")
         return
 
     # Affichage de la liste
@@ -36,6 +36,6 @@ def supprimer_contact_interface():
                 contact_a_supprimer.get('prenom')
             )
         else:
-            print("❌ Numéro invalide.")
+            print("Numéro invalide.")
     except ValueError:
-        print("❌ Entrée invalide.")
+        print("Entrée invalide.")

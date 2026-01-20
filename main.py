@@ -23,11 +23,11 @@ def generer_qrcode_interface():
         with open("contacts.json", "r") as f:
             liste_contacts = json.load(f)
     except FileNotFoundError:
-        print("❌ Aucun contact trouvé.")
+        print("Aucun contact trouvé.")
         return
 
     if not liste_contacts:
-        print("❌ La liste est vide.")
+        print("La liste est vide.")
         return
 
     # Affichage de la liste
@@ -41,9 +41,9 @@ def generer_qrcode_interface():
         if 0 <= idx_choix < len(liste_contacts):
             vcard_generator.display_qrcode(liste_contacts[idx_choix])
         else:
-            print("❌ Numéro invalide.")
+            print("Numéro invalide.")
     except ValueError:
-        print("❌ Entrée invalide.")
+        print("Entrée invalide.")
 
 
 def afficher_menu():
@@ -51,11 +51,11 @@ def afficher_menu():
     print("\n" + "="*50)
     print("       GESTIONNAIRE DE CONTACTS")
     print("="*50)
-    print("1. 📝 Ajouter un contact")
-    print("2. 📋 Lister les contacts")
-    print("3. 🗑️  Supprimer un contact")
-    print("4. 📱 Générer QR Code vCard")
-    print("5. 🚪 Quitter")
+    print("1. Ajouter un contact")
+    print("2. Lister les contacts")
+    print("3. Supprimer un contact")
+    print("4. Générer QR Code vCard")
+    print("5. Quitter")
     print("="*50)
 
 
@@ -74,10 +74,10 @@ def main():
         elif choix == "4":
             generer_qrcode_interface()
         elif choix == "5":
-            print("\n👋 Au revoir !")
+            print("\nAu revoir !")
             break
         else:
-            print("\n❌ Option invalide. Veuillez choisir entre 1 et 5.")
+            print("\nOption invalide. Veuillez choisir entre 1 et 5.")
 
 
 if __name__ == "__main__":
