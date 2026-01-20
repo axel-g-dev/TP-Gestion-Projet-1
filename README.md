@@ -1,5 +1,10 @@
 # TP – Gestion de projet avec GitHub Projects
 
+![v-card](https://img.shields.io/badge/v-card-000000?style=for-the-badge&logo=v-card&logoColor=white)
+![mermaid](https://img.shields.io/badge/Mermaid-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
+![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+
 **Développement Python avec GitHub Projects (Kanban & Roadmap)**
 
 ## Objectifs
