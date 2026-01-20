@@ -276,13 +276,26 @@ python3 main.py
 ```
 TP-Gestion-Projet-1/
 ├── .gitignore              # Fichiers à ignorer par Git
-├── contacts.py             # Module de gestion des contacts (ajout, liste, suppression)
+├── contacts.py             # Module principal de gestion des contacts (CRUD)
+├── ajouter_contact.py      # Interface utilisateur pour ajouter un contact
+├── supprimer_contact.py    # Interface utilisateur pour supprimer un contact
 ├── vcard_generator.py      # Générateur de cartes vCard avec QR Code
 ├── main.py                 # Point d'entrée de l'application CLI
 ├── contacts.json           # Base de données des contacts (généré automatiquement)
 ├── venv/                   # Environnement virtuel Python
 └── README.md               # Documentation du projet
 ```
+
+## Architecture Modulaire
+
+Le projet suit une **architecture modulaire** pour faciliter la maintenance et l'évolution :
+
+*   **`contacts.py`** : Couche de données - Fonctions CRUD (Create, Read, Update, Delete)
+*   **`ajouter_contact.py`** : Couche présentation - Interface d'ajout
+*   **`supprimer_contact.py`** : Couche présentation - Interface de suppression
+*   **`vcard_generator.py`** : Utilitaire - Génération de QR Codes vCard
+*   **`main.py`** : Orchestrateur - Menu principal et coordination des modules
+
 
 ## Technologies Utilisées
 
