@@ -369,7 +369,8 @@ TP-Gestion-Projet-1/
 ├── main.py                 # Point d'entrée de l'application CLI
 ├── contacts.json           # Base de données des contacts (généré automatiquement)
 ├── venv/                   # Environnement virtuel Python
-└── README.md               # Documentation du projet
+├──README.md               # Documentation du projet
+└── LICENSE              # MIT License
 ```
 
 ## Architecture Modulaire
