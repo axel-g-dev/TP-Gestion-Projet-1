@@ -5,8 +5,9 @@ def main():
         print("\n--- Gestionnaire de Contacts ---")
         print("1. Ajouter un contact")
         print("2. Lister les contacts")
-        print("3. Générer QR Code pour un contact")
-        print("4. Quitter")
+        print("3. Supprimer un contact")
+        print("4. Générer QR Code pour un contact")
+        print("5. Quitter")
         
         choix = input("Choisissez une option: ")
         
@@ -28,6 +29,36 @@ def main():
             print("\n--- Liste des contacts ---")
             contacts.lister_contacts()
         elif choix == "3":
+            print("\n--- Supprimer un contact ---")
+            try:
+                import json
+                with open("contacts.json", "r") as f:
+                    liste_contacts = json.load(f)
+            except FileNotFoundError:
+                print("Aucun contact trouvé.")
+                continue
+
+            if not liste_contacts:
+                print("La liste est vide.")
+                continue
+
+            for idx, c in enumerate(liste_contacts):
+                print(f"{idx + 1}. {c.get('prenom')} {c.get('nom')}")
+            
+            try:
+                idx_choix = int(input("Entrez le numéro du contact à supprimer: ")) - 1
+                if 0 <= idx_choix < len(liste_contacts):
+                    contact_a_supprimer = liste_contacts[idx_choix]
+                    contacts.supprimer_contact(
+                        contact_a_supprimer.get('nom'),
+                        contact_a_supprimer.get('prenom')
+                    )
+                else:
+                    print("Numéro invalide.")
+            except ValueError:
+                print("Entrée invalide.")
+        
+        elif choix == "4":
             print("\n--- Sélectionner un contact pour le QR Code ---")
             # On doit d'abord charger les contacts pour les lister avec un index
             try:
@@ -43,7 +74,7 @@ def main():
                 continue
 
             for idx, c in enumerate(liste_contacts):
-                print(f"{idx + 1}. {c.get('nom')} {c.get('prenom')}")
+                print(f"{idx + 1}. {c.get('prenom')} {c.get('nom')}")
             
             try:
                 idx_choix = int(input("Entrez le numéro du contact: ")) - 1
@@ -55,7 +86,7 @@ def main():
             except ValueError:
                 print("Entrée invalide.")
 
-        elif choix == "4":
+        elif choix == "5":
             print("Au revoir !")
             break
         else:

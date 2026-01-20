@@ -32,18 +32,18 @@
 
 ### Application Python : **Gestionnaire de contacts**
 
-L’application permet de gérer une liste de contacts stockée dans un fichier (JSON ou CSV).
+L'application permet de gérer une liste de contacts stockée dans un fichier (JSON ou CSV).
 
 ### Fonctionnalités attendues
 
 | Issue                     | Description                         | Responsable | Sprint   | Début | Fin   |
 | ------------------------- | ----------------------------------- | ----------- | -------- | ----- | ----- |
 | Création fichier contacts | Stockage des contacts (JSON ou CSV) | Louna       | Sprint 1 | 19/01 | 20/01 |
-| Ajouter un contact        | Ajout d’un contact                  | Teddy       | Sprint 1 | 19/01 | 21/01 |
-| Supprimer un contact      | Suppression d’un contact            | Teddy       | Sprint 1 | 20/01 | 22/01 |
+| Ajouter un contact        | Ajout d'un contact                  | Teddy       | Sprint 1 | 19/01 | 21/01 |
+| Supprimer un contact      | Suppression d'un contact            | Teddy       | Sprint 1 | 20/01 | 22/01 |
 | Lister les contacts       | Affichage des contacts              | Axel        | Sprint 1 | 20/01 | 22/01 |
 | Tests unitaires           | Vérification des fonctionnalités    | Rafaël      | Sprint 2 | 22/01 | 23/01 |
-| Documentation utilisateur | Procédure d’utilisation             | Axel        | Sprint 2 | 22/01 | 23/01 |
+| Documentation utilisateur | Procédure d'utilisation             | Axel        | Sprint 2 | 22/01 | 23/01 |
 
 ## Répartition des rôles
 
@@ -51,7 +51,7 @@ L’application permet de gérer une liste de contacts stockée dans un fichier 
 
 * Création et gestion du **GitHub Project**
 * Suivi du Kanban et de la Roadmap
-* Reporting d’avancement
+* Reporting d'avancement
 
 ### 2. Développeur Python principal
 
@@ -103,11 +103,11 @@ Pour chaque issue :
   * `documentation`
   * `bug`
 * Associer une **milestone (Sprint 1 ou 2)**
-* Renseigner une **date d’échéance (Due date)**
+* Renseigner une **date d'échéance (Due date)**
 
 > Ces dates permettront la génération automatique du **diagramme de Gantt (Roadmap)**.
 
-### Exemple d’issue
+### Exemple d'issue
 
 ```
 Title: Ajouter un contact
@@ -129,7 +129,7 @@ Workflow :
 To do → In progress → Done
 ```
 
-> *Un commentaire d’avancement est fortement recommandé.*
+> *Un commentaire d'avancement est fortement recommandé.*
 
 ## Étape 4 – Gestion des milestones (Sprints)
 
@@ -140,7 +140,7 @@ Dans l'onglet `Pull requests`, ajouter `Milestone` :
    * **Sprint 1** : développement
    * **Sprint 2** : tests & documentation
 2. Associer chaque issue à un sprint
-3. Observer le **taux d’avancement** par sprint
+3. Observer le **taux d'avancement** par sprint
 
 > *Permet de suivre la charge et le respect du planning.*
 
@@ -226,9 +226,72 @@ Lien avec :
 
 ## Remarques
 
-* L’évaluation porte principalement sur :
+* L'évaluation porte principalement sur :
 
   * le **suivi de projet**
   * la cohérence du Kanban et de la Roadmap
-  * l’utilisation correcte des issues, labels et milestones
+  * l'utilisation correcte des issues, labels et milestones
 * Le code doit être **fonctionnel**, mais la **méthodologie est prioritaire**
+
+---
+
+## Guide d'Utilisation
+
+### Installation
+
+1.  **Cloner le dépôt** :
+    ```bash
+    git clone https://github.com/axel-g-dev/TP-Gestion-Projet-1.git
+    cd TP-Gestion-Projet-1
+    ```
+
+2.  **Créer un environnement virtuel** (recommandé) :
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # Sur Windows: venv\Scripts\activate
+    ```
+
+3.  **Installer les dépendances** :
+    ```bash
+    pip install qrcode
+    ```
+
+### Lancement
+
+Exécutez le script principal :
+
+```bash
+python3 main.py
+```
+
+### Fonctionnalités Implémentées
+
+*   ✅ **Ajouter un contact** : Saisir nom, prénom, email et téléphone d'un nouveau contact
+*   ✅ **Lister les contacts** : Afficher tous les contacts enregistrés
+*   ✅ **Supprimer un contact** : Sélectionner et supprimer un contact de la liste
+*   ✅ **Générer QR Code vCard** : Afficher une carte de visite professionnelle dans le terminal avec un QR Code scannable (format vCard 3.0)
+
+## Structure du Projet
+
+```
+TP-Gestion-Projet-1/
+├── .gitignore              # Fichiers à ignorer par Git
+├── contacts.py             # Module de gestion des contacts (ajout, liste, suppression)
+├── vcard_generator.py      # Générateur de cartes vCard avec QR Code
+├── main.py                 # Point d'entrée de l'application CLI
+├── contacts.json           # Base de données des contacts (généré automatiquement)
+├── venv/                   # Environnement virtuel Python
+└── README.md               # Documentation du projet
+```
+
+## Technologies Utilisées
+
+*   **Python 3.x** : Langage de programmation
+*   **JSON** : Format de stockage des données
+*   **qrcode** : Bibliothèque pour la génération de QR Codes
+*   **Git & GitHub** : Contrôle de version et collaboration
+*   **GitHub Projects** : Gestion de projet (Kanban & Roadmap)
+
+## Auteurs
+
+Projet réalisé dans le cadre du TP Gestion de Projet - Groupe Axel
