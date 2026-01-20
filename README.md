@@ -305,6 +305,4 @@ Le projet suit une **architecture modulaire** pour faciliter la maintenance et l
 *   **Git & GitHub** : Contrôle de version et collaboration
 *   **GitHub Projects** : Gestion de projet (Kanban & Roadmap)
 
-## Auteurs
 
-Projet réalisé dans le cadre du TP Gestion de Projet - Groupe Axel
