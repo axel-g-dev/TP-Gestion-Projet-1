@@ -34,9 +34,9 @@ Le projet suit une architecture en couches :
 
 ```
 ┌─────────────────────────────────────┐
-│      main.py (Orchestrateur)       │
+│      main.py (Orchestrateur)        │
 ├─────────────────────────────────────┤
-│  Couche Présentation (Interfaces)  │
+│  Couche Présentation (Interfaces)   │
 │  - ajouter_contact.py               │
 │  - supprimer_contact.py             │
 ├─────────────────────────────────────┤
@@ -413,42 +413,5 @@ python3 main.py
 - [ ] Configuration externe (config.json)
 - [ ] Internationalisation (i18n)
 
-### Structure de test recommandée
 
-```
-TP-Gestion-Projet-1/
-├── tests/
-│   ├── test_contacts.py
-│   ├── test_vcard_generator.py
-│   └── fixtures/
-│       └── sample_contacts.json
-├── docs/
-│   └── DOCUMENTATION.md
-└── ...
-```
 
----
-
-## Dépannage
-
-### Le QR Code ne s'affiche pas correctement
-
-**Solution** : Vérifier que le terminal supporte l'affichage ASCII. Essayer avec un autre terminal.
-
-### Erreur d'import de modules
-
-**Solution** : Vérifier que l'environnement virtuel est activé et que qrcode est installé.
-
-### Fichier JSON corrompu
-
-**Solution** : Supprimer le fichier `contacts.json` (sauvegarde recommandée) et redémarrer l'application.
-
----
-
-## Informations complémentaires
-
-**Version** : 1.0.0  
-**Langage** : Python 3.x  
-**Dépendances** : qrcode  
-**Licence** : Non spécifiée  
-**Support** : GitHub Issues
