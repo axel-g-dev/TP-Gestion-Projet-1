@@ -1,5 +1,3 @@
-# MERCI RAFAEL POUR LES 740 
-
 # TP – Gestion de projet avec GitHub Projects
 
 **Développement Python avec GitHub Projects (Kanban & Roadmap)**
